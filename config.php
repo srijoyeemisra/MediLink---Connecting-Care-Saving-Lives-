@@ -7,3 +7,4 @@ return [
     'pass' => '',
     'charset' => 'utf8mb4',
 ];
+
