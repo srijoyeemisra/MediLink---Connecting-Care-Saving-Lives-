@@ -1,142 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
-    <!-- Bootstrap CSS Start -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Bootstrap CSS End -->
-
-    <!-- Google Font Start -->
+  <!-- Google Font Starts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Google Font End -->
+  <!-- Google Font Ends -->
 
-    <title>Document</title>
+  <!-- BootStrap CSS Starts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- BootStrap CSS Ends -->
 
-    <style>
+  <title>Hospital Bed Booking — Nearby Hospitals</title>
+  <style>
     /* Minimal, clean styles */
     body 
     { 
-      font-family: "Roboto",sans-serif; 
-      margin: 0; 
-      padding: 0;
+      font-family:"Roboto", sans-serif;
+      margin: 0;
+      padding: 0; 
       background:#f6f7fb; 
       color:#111;
     }
     .wrap 
-    {
-       max-width: 900px;
-       margin: 28px auto; 
-       padding: 18px; 
+    { 
+      max-width: 900px; 
+      margin: 28px auto; padding: 18px; 
     }
     header 
-    { 
-      display:flex; 
-      align-items:center; 
-      justify-content:space-between; 
-      margin-bottom: 12px; 
+    { display:flex; align-items:center; justify-content:space-between; margin-bottom: 12px; 
     }
     h1 
-    { 
-      margin:0; 
-      font-size:1.2rem; 
+    { margin:0; font-size:1.2rem; 
     }
     .status 
-    { 
-      font-size:0.9rem; 
-      color:#666; 
+    { font-size:0.9rem; color:#666; 
     }
     .list 
-    { 
-      margin-top:12px; 
-      display:grid; 
-      gap:10px; 
+    { margin-top:12px; display:grid; gap:10px; 
     }
     .card 
-    { 
-      background:white; 
-      border-radius:10px; 
-      padding:12px; 
-      box-shadow:0 6px 18px rgba(16,24,40,0.06); 
-      display:flex; 
-      justify-content:space-between; 
-      align-items:flex-start; 
+    { background:white; border-radius:10px; padding:12px; box-shadow:0 6px 18px rgba(16,24,40,0.06); display:flex; justify-content:space-between; align-items:flex-start; 
     }
     .info 
     { max-width:70%; 
     }
     .name 
-    { font-weight:600; 
-      margin-bottom:6px;
+    { font-weight:600; margin-bottom:6px; 
     }
     .meta 
-    { 
-      color:#666; 
-      font-size:0.9rem; 
-      margin-bottom:6px; 
+    { color:#666; font-size:0.9rem; margin-bottom:6px; 
     }
     .distance 
-    { 
-      font-size:0.9rem; 
-      color:#0b63ff; 
-      font-weight:600; 
+    { font-size:0.9rem; color:#0b63ff; font-weight:600; 
     }
     .actions 
-    { 
-      display:flex; 
-      gap:8px; 
-      align-items:center; 
+    { display:flex; gap:8px; align-items:center; 
     }
     button 
-    { 
-      background:#0b63ff; 
-      color:white; 
-      border:0; 
-      padding:8px 12px; 
-      border-radius:8px; 
-      cursor:pointer; 
-      font-weight:600; 
+    { background:#0b63ff; color:white; border:0; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600; 
     }
     button.secondary 
-    { 
-      background:transparent; 
-      color:#0b63ff; 
-      border:1px solid rgba(11,99,255,0.12); 
+    { background:transparent; color:#0b63ff; border:1px solid rgba(11,99,255,0.12); 
     }
     .muted 
-    { 
-      color:#999; 
+    { color:#999; 
       font-size:0.9rem; 
     }
     .loader 
-    { 
-      margin-top:10px; 
+    { margin-top:10px; 
     }
     .manual 
-    { 
-      margin-top:12px; 
-      font-size:0.95rem; 
-      color:#333; 
+    { margin-top:12px; font-size:0.95rem; color:#333; 
     }
     @media (max-width:560px)
     {
-      .info 
-      {
-         max-width:60%; 
-      }
-      h1 
-      { 
-        font-size:1rem; 
-      }
+      .info { max-width:60%; }
+      h1 { font-size:1rem; }
     }
   </style>
 </head>
 <body>
-
-    <div class="wrap">
+  <div class="wrap">
     <header>
       <h1>Find nearest hospitals</h1>
       <div class="status" id="status">Requesting location…</div>
@@ -323,10 +271,5 @@
 
 })();
 </script>
-    
-    
-    <!-- Bootstrap JS Start -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS End -->
 </body>
 </html>
