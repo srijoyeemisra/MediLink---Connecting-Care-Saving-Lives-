@@ -70,7 +70,7 @@ function e($s){ return htmlspecialchars($s, ENT_QUOTES, 'UTF-8'); }
 
     <div style="display:flex; gap:12px;">
       <button id="bookGeneral">Book General Bed</button>
-      <button id="bookICU" class="secondary">Book ICU Bed</button>
+      <button id="bookICU" class="secondary" style="visibility: hidden;">Book ICU Bed</button>
     </div>
 
     <div class="message" id="message" style="display:none;"></div>
