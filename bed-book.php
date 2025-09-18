@@ -12,7 +12,7 @@
 
   <!-- BootStrap CSS Starts -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- BootStrap CSS Ends -->
+  <!-- BootStrap CSS Ends -->
 
   <title>Hospital Bed Booking — Nearby Hospitals</title>
   <style>
@@ -72,6 +72,17 @@
     }
     .loader 
     { margin-top:10px; 
+    }
+    .hospital-card {
+      border: 1px solid #ccc;
+      padding: 12px;
+      margin: 12px;
+      border-radius: 8px;
+    }
+    button {
+      margin-top: 8px;
+      padding: 8px 12px;
+      cursor: pointer;
     }
     .manual 
     { margin-top:12px; font-size:0.95rem; color:#333; 
@@ -166,13 +177,13 @@
     listEl.querySelectorAll('.bookBtn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         const id = e.currentTarget.dataset.id;
-        alert('Proceed to booking flow for hospital id: ' + id + '\\n(Implement booking flow separately.)');
+        alert('Proceed to booking flow for hospital id: ' + id);
       });
     });
     listEl.querySelectorAll('.detailsBtn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         const id = e.currentTarget.dataset.id;
-        alert('Show details for hospital id: ' + id + '\\n(Implement details UI separately.)');
+        alert('Show details for hospital id: ' + id);
       });
     });
   }
@@ -271,5 +282,7 @@
 
 })();
 </script>
+
+<script src="./js/booking.js"></script>
 </body>
 </html>
