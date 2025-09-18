@@ -1,0 +1,169 @@
+/* doctor_schedule.css */
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('https://cdn.wallpapersafari.com/47/35/R1oS3j.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h2, h3 {
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+.muted {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+/* Form Styling */
+.form-row {
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #eee;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: border 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input:focus {
+  border-color: #0b63ff;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(11, 99, 255, 0.6);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#confirmBook, .btn-primary {
+  background: rgba(11, 99, 255, 0.7);
+  color: #fff;
+}
+
+#confirmBook:hover, .btn-primary:hover {
+  background: rgba(11, 99, 255, 0.85);
+}
+
+.secondary {
+  background: rgba(224, 224, 224, 0.3);
+  color: #fff;
+}
+
+.secondary:hover {
+  background: rgba(224, 224, 224, 0.5);
+}
+
+/* Back link */
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Home button */
+.btn-div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  padding: 14px 28px;
+  border-radius: 16px;
+  display: inline-block;
+  background: rgba(11, 99, 255, 0.7);
+}
+
+.return-home {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}

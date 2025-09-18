@@ -1,0 +1,111 @@
+/* ===================================================
+   Doctors Page CSS
+   File: doctors.css
+=================================================== */
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('https://cdn.wallpapersafari.com/47/35/R1oS3j.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+}
+
+/* Hospital Info */
+.card h2 {
+  font-size: 1.8rem;
+  color: #0b63ff;
+  margin-bottom: 6px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 6px;
+}
+
+.muted {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* Back link */
+a[href^="doctor_schedule.html"] {
+  display: inline-block;
+  margin-top: 12px;
+  color: #0b63ff;
+  text-decoration: none;
+}
+
+a[href^="doctor_schedule.html"]:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn-div {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 16px;
+  background: rgba(11, 99, 255, 0.7);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(11, 99, 255, 0.85);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
