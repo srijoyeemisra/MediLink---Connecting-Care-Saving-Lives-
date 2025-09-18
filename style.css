@@ -174,7 +174,7 @@ nav {
 .hero {
   background:
     linear-gradient(rgba(0,105,137,0.56), rgba(0,105,137,0.56)),
-    url('https://images5.alphacoders.com/329/329343.jpg') center/cover no-repeat;
+    url('https://cdn.wallpapersafari.com/47/35/R1oS3j.jpg') center/cover no-repeat;
   min-height: 88vh;
   display: flex;
   flex-direction: column;
@@ -756,4 +756,5 @@ footer {
         margin: 0 5% 0 5%;
     }
 }
+
 
