@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -518,6 +517,7 @@ footer {
   .big-btn { padding: 0.75rem 1rem; font-size: 0.95rem; }
 }
 
+
 .about-header{
     text-align: center;
     height: 170px;
@@ -698,4 +698,62 @@ footer {
     line-height: 1.6rem;
     margin: 0 20% 0 20%;
 }
-  
+
+@media (max-width: 900px) {
+    .about-second-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .about-header p{
+        margin: 0 10% 0 10%;
+    }
+
+    .about-heading-para{
+        margin: 40px 10% 0 10%;
+    }
+
+    .about-fifth-section p{
+        margin: 0 10% 0 10%;
+    }
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .about-box{
+        width: 100%;
+    }
+
+    .value-box{
+        width: 100%;
+    }
+
+    .team-member{
+        width: 100%;
+    }
+    .about-header h1{
+        font-size: 28px;
+    }
+    .about-header p{
+        font-size: 16px;
+        margin: 0 5% 0 5%;
+    }
+    .about-heading-para{
+        font-size: 16px;
+        margin: 20px 5% 0 5%;
+    }
+    .about-fifth-section h2{
+        font-size: 24px;
+    }
+    .about-fifth-section p{
+        font-size: 16px;
+        margin: 0 5% 0 5%;
+    }
+}
+
