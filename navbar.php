@@ -101,6 +101,9 @@ $username=$_SESSION['username'];
             <form action="ambulance-call.php" method="POST">
            <button class="btn btn-warning mt-1 mx-3" type="submit" name="ambulance-call">Call Ambulance</button>
             </form>
+            <button onclick="window.location.href='appointments_history.php'" class="btn btn-primary">
+             View Appointment History
+            </button>
            </div>        
             <?php endif ?>
             </div>       
