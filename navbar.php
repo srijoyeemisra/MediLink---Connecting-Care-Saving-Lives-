@@ -93,13 +93,13 @@ $username=$_SESSION['username'];
             <?php if($username!=="Profile"): ?>
            <div class="btn-div1" style="display: inline-block;">
             <form action="bed-book.php" method="POST">
-           <button class="btn btn-danger mx-3" type="submit" name="bed-book">Book a Bed</button>
+           <button class="btn btn-danger mx-1" type="submit" name="bed-book">Book a Bed</button>
             </form>
             <form action="appointment-schedule.php" method="POST">
-           <button class="btn btn-secondary mx-3" type="submit" name="appt-schedule">Schedule Appointments</button>
+           <button class="btn btn-secondary mx-1" type="submit" name="appt-schedule">Schedule Appointments</button>
             </form>
             <form action="ambulance-call.php" method="POST">
-           <button class="btn btn-warning mt-1 mx-3" type="submit" name="ambulance-call">Call Ambulance</button>
+           <button class="btn btn-warning mt-1 mx-1" type="submit" name="ambulance-call">Call Ambulance</button>
             </form>
             <button onclick="window.location.href='appointments_history.php'" class="btn btn-primary">
              View Appointment History
