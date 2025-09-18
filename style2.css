@@ -170,19 +170,10 @@ h5 a{
     }
 }
 
-.form-footer{
+.form-foot{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-@media (max-width: 400px){
-    .form-footer{
-        flex-direction: column;
-    }
-    .form-footer button{
-        margin: 5px 0;
-    }
 }
