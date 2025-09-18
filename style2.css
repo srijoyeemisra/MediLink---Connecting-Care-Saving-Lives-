@@ -169,3 +169,20 @@ h5 a{
         font-size: 0.9rem;
     }
 }
+
+.form-footer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 400px){
+    .form-footer{
+        flex-direction: column;
+    }
+    .form-footer button{
+        margin: 5px 0;
+    }
+}
