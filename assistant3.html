@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediLink Virtual Assistant</title>
+  <link rel="stylesheet" href="assistant3.css" />
+  <script src="https://kit.fontawesome.com/5c3b65c3d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://img.icons8.com/fluency/96/medical-doctor.png" alt="MediLink Logo">
+      <span class="brand-text">MediLink</span>
+    </div>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#hospital">Hospital Booking</a></li>
+        <li><a href="doctor-appointment3.html">Doctor Appointment</a></li>
+        <li><a href="#ambulance">Ambulance Service</a></li>
+        <li><a href="assistant3.html">Virtual Assistance</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-outline nav-login">Login</button>
+      <button class="btn btn-primary nav-emergency">Emergency: 102</button>
+    </div>
+  </header>
+
+  
+  <main class="assistant-container">
+    
+    <section class="chatbox">
+      <div class="chat-messages" id="chat-messages">
+        <div class="message bot">Hello! 👋 I’m your MediLink Assistant. How can I help you today?</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </section>
+
+    
+    <aside class="sidebar">
+      <div class="faq">
+        <h3>❓ FAQs</h3>
+        <ul>
+          <li><b>🚑 How to contact an ambulance?</b><br><span class="faq-answer">Click the Emergency button or dial 108.</span></li>
+          <li><b>🌱 Can I get health tips here?</b><br><span class="faq-answer">Yes, we provide daily wellness and preventive care tips.</span></li>
+          <li><b>💊 How to know about Doctor Availability ?</b><br><span class="faq-answer">You can search for doctors directly through the doctor's appointment portal.</span></li>
+          <li><b>🏥 Can I find nearby hospitals?</b><br><span class="faq-answer">Yes, use our hospital locator service.</span></li>
+        </ul>
+      </div>
+      <div class="emergency-card" id="emergency">
+        <h3>🚑 Ambulance</h3>
+        <p>Click below to call an ambulance immediately.</p>
+        <button class="btn-emergency">Call Now</button>
+      </div>
+    </aside>
+  </main>
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 class="logo"><i class="fa-solid fa-heart-pulse"></i> MediLink</h3>
+        <p>Your trusted digital healthcare companion, connecting hospitals, doctors, ambulances, and patients for faster, smarter, and more accessible healthcare services.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hospital">Hospital Booking</a></li>
+          <li><a href="doctor-appointment3.html">Doctor Appointment</a></li>
+          <li><a href="#ambulance">Ambulance Service</a></li>
+          <li><a href="assistant3.html">Virtual Assistance</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> Emergency: 102</li>
+          <li><i class="fa-solid fa-headset"></i> Support: 9830032645-MEDILINK</li>
+          <li><i class="fa-solid fa-envelope"></i> support@medilink.healthcare</li>
+          <li><i class="fa-solid fa-globe"></i> Available nationwide 24/7</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 MediLink Healthcare Platform. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ Mobile nav toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    navToggle.addEventListener('click', () => {
+      navList.classList.toggle('nav-open');
+      navToggle.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-list a').forEach(a => {
+      a.addEventListener('click', () => {
+        if (navList.classList.contains('nav-open')) {
+          navList.classList.remove('nav-open');
+          navToggle.classList.remove('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
